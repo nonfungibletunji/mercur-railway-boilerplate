@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "name": "mercur",
+  "version": "0.9.0",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=10"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx patch-package",
+
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+
+		"start:api": "turbo run api#start --env-mode=loose",
+		"start:vendor": "turbo run vendor-panel#start --env-mode=loose",
+		"start:store": "turbo run b2c-storefront#start --env-mode=loose",
+    
+		"build:api": "turbo run api#build --env-mode=loose",
+		"build:vendor": "turbo run vendor-panel#build --env-mode=loose",
+		"build:store": "turbo run b2c-storefront#build --env-mode=loose",
+
+    "db:init": "pnpm --filter=api run db:init",
+    "db:admin": "pnpm --filter=api run db:admin",
+    "db:migrate": "pnpm --filter=api run db:migrate",
+
+    "format": "turbo run format",
+    "lint": "turbo run lint",
+
+    "codegen": "turbo run codegen",
+    "generate:oas": "turbo run generate:oas"
+  }
+}

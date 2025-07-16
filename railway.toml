@@ -1,0 +1,15 @@
+[phases.setup]
+nixpkgs = ["nodejs_22", "corepack", "pnpm_10"]
+
+[phases.install]
+cmds = [
+  "npm install -g corepack && corepack enable",
+  "corepack prepare pnpm@10.8.0 --activate",
+  "pnpm install"
+]
+
+[phases.build]
+cmds = ["pnpm run build"]
+
+[phases.start]
+cmds = ["pnpm run dev"]
