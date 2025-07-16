@@ -1,10 +1,10 @@
-# 🛠️ Mercur Railway Boilerplate
+# 🛠 Mercur Railway Boilerplate
 
 A minimal MedusaJS boilerplate ready for instant deployment on [Railway](https://railway.app). Perfect for launching a headless eCommerce backend quickly.
 
 ---
 
-## 🚀 Features
+## Features
 
 - MedusaJS v2 (Headless Commerce)
 - Railway deployment (PostgreSQL)
@@ -13,7 +13,7 @@ A minimal MedusaJS boilerplate ready for instant deployment on [Railway](https:/
 
 ---
 
-## 📦 Tech Stack
+## Tech Stack
 
 - MedusaJS
 - Node.js
@@ -22,7 +22,7 @@ A minimal MedusaJS boilerplate ready for instant deployment on [Railway](https:/
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### One-click deploy:
 
@@ -39,12 +39,12 @@ pnpm run dev
 
 ---
 
-## 📄 License
+## License
 
 MIT
 
 ---
 
-## 👤 Author
+## Author
 
 [Daichi Toyoda](https://dtoyoda10.site)
