@@ -93,9 +93,6 @@ Ensure you have a local PostgreSQL server running. Then, initialize your databas
 # Run migrations (creates tables)
 pnpm run db:init
 
-# Seed initial data (optional, uses data/seed.json)
-pnpm run db:seed
-
 # Create an admin user (interactive prompt)
 pnpm run db:admin
 ```
